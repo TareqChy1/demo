@@ -1,22 +1,64 @@
-Welcome to Lumache's documentation!
-===================================
+Conway's Game of Life
+=====================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+Simple pygame implementation of Conway's Game of Life.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+.. contents::
 
-.. note::
+Screenshot
+----------
 
-   This project is under active development.
+.. image:: screenshots/screenshot.png
 
-Contents
+
+Installation
+------------
+
+Install with pip::
+
+  pip install nanolife
+
+Install from source::
+
+  python setup.py install
+
+
+Running
+-------
+
+Run via launch script installed with pip package::
+
+  nanolife
+
+Run as a Python module::
+
+  python -m nanolife
+
+Using inside of code
+--------------------
+
+To import the class in to your own code::
+
+  from nanolife.LifeGame import LifeGame
+  LifeGame().run()
+
+
+Controls
 --------
 
-.. toctree::
+There are a couple keybinds available:
 
-   usage
-   api
+- q - Quit
+- s - Start/stop (toggle pause)
+- r - Randomize the grid
+
+Links
+-----------
+
+- https://github.com/DevDungeon/NanoLifePy
+- https://pypi.org/project/nanolife/
+
+Contact
+-------
+
+NanoDano <nanodano@devdungeon.com>
