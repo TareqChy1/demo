@@ -1,9 +1,64 @@
-Template for the Read the Docs tutorial
-=======================================
+Conway's Game of Life
+=====================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+Simple pygame implementation of Conway's Game of Life.
 
-Read the tutorial here:
+.. contents::
 
-https://docs.readthedocs.io/en/stable/tutorial/
+Screenshot
+----------
+
+.. image:: screenshots/screenshot.png
+
+
+Installation
+------------
+
+Install with pip::
+
+  pip install nanolife
+
+Install from source::
+
+  python setup.py install
+
+
+Running
+-------
+
+Run via launch script installed with pip package::
+
+  nanolife
+
+Run as a Python module::
+
+  python -m nanolife
+
+Using inside of code
+--------------------
+
+To import the class in to your own code::
+
+  from nanolife.LifeGame import LifeGame
+  LifeGame().run()
+
+
+Controls
+--------
+
+There are a couple keybinds available:
+
+- q - Quit
+- s - Start/stop (toggle pause)
+- r - Randomize the grid
+
+Links
+-----------
+
+- https://github.com/DevDungeon/NanoLifePy
+- https://pypi.org/project/nanolife/
+
+Contact
+-------
+
+NanoDano <nanodano@devdungeon.com>
